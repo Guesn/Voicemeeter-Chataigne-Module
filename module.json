@@ -1,0 +1,351 @@
+{
+	"name":"Voicemeeter",
+	"type":"MIDI",
+	"path":"Software",
+	
+	"version":"1.0.0",
+	"description":"Voicemeeter Control Module, you must use the XML as midi map in voicemeeter",
+	"url":"https://github.com/Guesn/Voicemeeter-Chataigne-Module",
+	"downloadURL":"https://github.com/Guesn/Voicemeeter-Chataigne-Module/archive/master.zip",
+	
+	"hasInput":true,
+	"hasOutput":true, 
+
+	"hideDefaultCommands":true,
+
+
+
+	"parameters":
+	{
+		"type":"Container",
+	},
+
+	"defaults":
+	{		
+		"devices":["X-Touch", "X-Touch"],
+		"autoAdd":false
+	},
+
+	"hideDefaultParameters":
+	[
+		"autoAdd",
+		"autoFeedback"
+	],
+
+
+	"scripts":
+	[
+		"Voicemeeter.js"
+	],
+
+	"values":
+	{
+		"type":"Container",
+		"collapsed":true,
+		
+		"Tape":{
+			"type":"Container",
+			"collapsed":true,
+			"Tape_Gain": {"type":"Float", "min":0,"max":1},
+			"Play": {"type":"Trigger"},
+			"Rec": {"type":"Trigger"},
+			"Stop": {"type":"Trigger"},
+			"Rew": {"type":"Trigger"},
+			"FF": {"type":"Trigger"},
+			"Replay": {"type":"Trigger"}
+		},
+		"Strips":{
+			"type":"Container",
+			"collapsed":true,
+			"1":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"L-R_Pan": {"type":"Float", "min":0,"max":1},
+				"Reset_Pan": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"Solo": {"type":"Trigger"},
+				"Comp": {"type":"Float", "min":0,"max":1},
+				"Gate": {"type":"Float", "min":0,"max":1},
+				"Denoiser": {"type":"Float", "min":0,"max":1},
+				"Limiter": {"type":"Float", "min":0,"max":1},
+				"Reverb": {"type":"Float", "min":0,"max":1},
+				"Delay": {"type":"Float", "min":0,"max":1},
+				"Ext_FX1": {"type":"Float", "min":0,"max":1},
+				"Ext_FX2": {"type":"Float", "min":0,"max":1},
+				"Switch_B1_B2": {"type":"Trigger"},
+				"A1": {"type":"Trigger"},
+				"A2": {"type":"Trigger"},
+				"A3": {"type":"Trigger"},
+				"A4": {"type":"Trigger"},
+				"A5": {"type":"Trigger"},
+				"B1": {"type":"Trigger"},
+				"B2": {"type":"Trigger"},
+				"B3": {"type":"Trigger"}
+			},
+			"2":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"L-R_Pan": {"type":"Float", "min":0,"max":1},
+				"Reset_Pan": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"Solo": {"type":"Trigger"},
+				"Comp": {"type":"Float", "min":0,"max":1},
+				"Gate": {"type":"Float", "min":0,"max":1},
+				"Denoiser": {"type":"Float", "min":0,"max":1},
+				"Limiter": {"type":"Float", "min":0,"max":1},
+				"Reverb": {"type":"Float", "min":0,"max":1},
+				"Delay": {"type":"Float", "min":0,"max":1},
+				"Ext_FX1": {"type":"Float", "min":0,"max":1},
+				"Ext_FX2": {"type":"Float", "min":0,"max":1},
+				"A1": {"type":"Trigger"},
+				"A2": {"type":"Trigger"},
+				"A3": {"type":"Trigger"},
+				"A4": {"type":"Trigger"},
+				"A5": {"type":"Trigger"},
+				"B1": {"type":"Trigger"},
+				"B2": {"type":"Trigger"},
+				"B3": {"type":"Trigger"}
+			},
+			"3":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"L-R_Pan": {"type":"Float", "min":0,"max":1},
+				"Reset_Pan": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"Solo": {"type":"Trigger"},
+				"Comp": {"type":"Float", "min":0,"max":1},
+				"Gate": {"type":"Float", "min":0,"max":1},
+				"Denoiser": {"type":"Float", "min":0,"max":1},
+				"Limiter": {"type":"Float", "min":0,"max":1},
+				"Reverb": {"type":"Float", "min":0,"max":1},
+				"Delay": {"type":"Float", "min":0,"max":1},
+				"Ext_FX1": {"type":"Float", "min":0,"max":1},
+				"Ext_FX2": {"type":"Float", "min":0,"max":1},
+				"A1": {"type":"Trigger"},
+				"A2": {"type":"Trigger"},
+				"A3": {"type":"Trigger"},
+				"A4": {"type":"Trigger"},
+				"A5": {"type":"Trigger"},
+				"B1": {"type":"Trigger"},
+				"B2": {"type":"Trigger"},
+				"B3": {"type":"Trigger"}
+			},
+			"4":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"L-R_Pan": {"type":"Float", "min":0,"max":1},
+				"Reset_Pan": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"Solo": {"type":"Trigger"},
+				"Comp": {"type":"Float", "min":0,"max":1},
+				"Gate": {"type":"Float", "min":0,"max":1},
+				"Denoiser": {"type":"Float", "min":0,"max":1},
+				"Limiter": {"type":"Float", "min":0,"max":1},
+				"Reverb": {"type":"Float", "min":0,"max":1},
+				"Delay": {"type":"Float", "min":0,"max":1},
+				"Ext_FX1": {"type":"Float", "min":0,"max":1},
+				"Ext_FX2": {"type":"Float", "min":0,"max":1},
+				"A1": {"type":"Trigger"},
+				"A2": {"type":"Trigger"},
+				"A3": {"type":"Trigger"},
+				"A4": {"type":"Trigger"},
+				"A5": {"type":"Trigger"},
+				"B1": {"type":"Trigger"},
+				"B2": {"type":"Trigger"},
+				"B3": {"type":"Trigger"}
+			},
+			"5":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"L-R_Pan": {"type":"Float", "min":0,"max":1},
+				"Reset_Pan": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"Solo": {"type":"Trigger"},
+				"Comp": {"type":"Float", "min":0,"max":1},
+				"Gate": {"type":"Float", "min":0,"max":1},
+				"Denoiser": {"type":"Float", "min":0,"max":1},
+				"Limiter": {"type":"Float", "min":0,"max":1},
+				"Reverb": {"type":"Float", "min":0,"max":1},
+				"Delay": {"type":"Float", "min":0,"max":1},
+				"Ext_FX1": {"type":"Float", "min":0,"max":1},
+				"Ext_FX2": {"type":"Float", "min":0,"max":1},
+				"A1": {"type":"Trigger"},
+				"A2": {"type":"Trigger"},
+				"A3": {"type":"Trigger"},
+				"A4": {"type":"Trigger"},
+				"A5": {"type":"Trigger"},
+				"B1": {"type":"Trigger"},
+				"B2": {"type":"Trigger"},
+				"B3": {"type":"Trigger"}
+			},
+			"6":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"L-R_Pan": {"type":"Float", "min":0,"max":1},
+				"Reset_Pan": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"Solo": {"type":"Trigger"},
+				"M_C": {"type":"Trigger"},
+				"Limiter": {"type":"Float", "min":0,"max":1},
+				"A1": {"type":"Trigger"},
+				"A2": {"type":"Trigger"},
+				"A3": {"type":"Trigger"},
+				"A4": {"type":"Trigger"},
+				"A5": {"type":"Trigger"},
+				"B1": {"type":"Trigger"},
+				"B2": {"type":"Trigger"},
+				"B3": {"type":"Trigger"},
+				"EQ_High": {"type":"Float", "min":0,"max":1},
+				"EQ_Med": {"type":"Float", "min":0,"max":1},
+				"EQ_Low": {"type":"Float", "min":0,"max":1},
+				"App#1_Volume": {"type":"Float", "min":0,"max":1},
+				"App#2_Volume": {"type":"Float", "min":0,"max":1},
+				"App#3_Volume": {"type":"Float", "min":0,"max":1},
+				"App#4_Volume": {"type":"Float", "min":0,"max":1},
+				"App#1_Mute": {"type":"Trigger"},
+				"App#2_Mute": {"type":"Trigger"},
+				"App#3_Mute": {"type":"Trigger"},
+				"App#4_Mute": {"type":"Trigger"}
+			},
+			"7":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"L-R_Pan": {"type":"Float", "min":0,"max":1},
+				"Reset_Pan": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"Solo": {"type":"Trigger"},
+				"K": {"type":"Trigger"},
+				"Limiter": {"type":"Float", "min":0,"max":1},
+				"A1": {"type":"Trigger"},
+				"A2": {"type":"Trigger"},
+				"A3": {"type":"Trigger"},
+				"A4": {"type":"Trigger"},
+				"A5": {"type":"Trigger"},
+				"B1": {"type":"Trigger"},
+				"B2": {"type":"Trigger"},
+				"B3": {"type":"Trigger"},
+				"EQ_High": {"type":"Float", "min":0,"max":1},
+				"EQ_Med": {"type":"Float", "min":0,"max":1},
+				"EQ_Low": {"type":"Float", "min":0,"max":1},
+				"App#1_Volume": {"type":"Float", "min":0,"max":1},
+				"App#2_Volume": {"type":"Float", "min":0,"max":1},
+				"App#3_Volume": {"type":"Float", "min":0,"max":1},
+				"App#4_Volume": {"type":"Float", "min":0,"max":1},
+				"App#1_Mute": {"type":"Trigger"},
+				"App#2_Mute": {"type":"Trigger"},
+				"App#3_Mute": {"type":"Trigger"},
+				"App#4_Mute": {"type":"Trigger"}
+			},
+			"8":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"L-R_Pan": {"type":"Float", "min":0,"max":1},
+				"Reset_Pan": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"Solo": {"type":"Trigger"},
+				"M_C": {"type":"Trigger"},
+				"Limiter": {"type":"Float", "min":0,"max":1},
+				"A1": {"type":"Trigger"},
+				"A2": {"type":"Trigger"},
+				"A3": {"type":"Trigger"},
+				"A4": {"type":"Trigger"},
+				"A5": {"type":"Trigger"},
+				"B1": {"type":"Trigger"},
+				"B2": {"type":"Trigger"},
+				"B3": {"type":"Trigger"},
+				"EQ_High": {"type":"Float", "min":0,"max":1},
+				"EQ_Med": {"type":"Float", "min":0,"max":1},
+				"EQ_Low": {"type":"Float", "min":0,"max":1},
+				"App#1_Volume": {"type":"Float", "min":0,"max":1},
+				"App#2_Volume": {"type":"Float", "min":0,"max":1},
+				"App#3_Volume": {"type":"Float", "min":0,"max":1},
+				"App#4_Volume": {"type":"Float", "min":0,"max":1},
+				"App#1_Mute": {"type":"Trigger"},
+				"App#2_Mute": {"type":"Trigger"},
+				"App#3_Mute": {"type":"Trigger"},
+				"App#4_Mute": {"type":"Trigger"}
+			}
+		},
+		"Bus":{
+			"type":"Container",
+			"collapsed":true,
+			"1":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"Select": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"EQ": {"type":"Trigger"}
+			},
+			"2":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"Select": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"EQ": {"type":"Trigger"}
+			},
+			"3":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"Select": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"EQ": {"type":"Trigger"}
+			},
+			"4":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"Select": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"EQ": {"type":"Trigger"}
+			},
+			"5":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"Select": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"EQ": {"type":"Trigger"}
+			},
+			"6":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"Select": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"EQ": {"type":"Trigger"}
+			},
+			"7":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"Select": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"EQ": {"type":"Trigger"}
+			},
+			"8":{
+				"type":"Container",
+				"collapsed":true,
+				"Gain_Fader": {"type":"Float", "min":0,"max":1},
+				"Select": {"type":"Trigger"},
+				"Mute": {"type":"Trigger"},
+				"EQ": {"type":"Trigger"}
+			}
+		}
+		
+	},
+	"commands":
+	{
+		
+	}
+}
